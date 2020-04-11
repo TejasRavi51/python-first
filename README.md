@@ -1,6 +1,10 @@
 # python-tutorial
 python project to access mail and data scrubbing
 
+Libraries required for the project -> smtplib, imaplib, sys, requests, pandas, os, 
+
+
+
 Just my test project to understand gitHub perositories and python libraries\
 Day 7 - just a general print statement.
 Day 8 - test file with functions and formatting strings
