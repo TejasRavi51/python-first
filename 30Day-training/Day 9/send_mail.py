@@ -28,3 +28,4 @@ def send_mail(text='Email Body', subject='Hello World', from_email='Dev Teha <hu
     # with smtplib.SMTP() as server:
     #     server.login()
     #     pass
+    #this is another way of using smtp
