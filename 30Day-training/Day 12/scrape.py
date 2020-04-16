@@ -50,14 +50,15 @@ def parse_and_extract():
     for x in header_cols:
         header_names.append(x.text)
     #header_names = [x.text for x in header_cols]
-    
-    # for row in rows[1:]:
-    #     cols = row.find("td")
-    #     row_data =[]
-    #     row_dict_data = {}
-
     print(header_names)
 
+    for row in rows[1:]:
+        cols = row.find("td")
+        row_data =[]
+        row_dict_data = {}
+        for i, cols in enumerate(cols):
+            print(i, cols.text,"\n")   
+            header_name = header_names[i]
 
 if __name__ == "__main__":
     #url2 = "https://www.rottentomatoes.com/top/bestofrt/"
