@@ -34,11 +34,11 @@ def parse_and_extract(url, year = None):
     header_names = []
     if len(r_table) == 0:
         return False
-    parsed_table = r_table[0]
+    parsed_table = r_table[0]           #assigning the first row of the table as the header
     rows = parsed_table.find("tr")
     header_row = rows[0]
     header_cols = header_row.find("th")
-    
+    #iterating through column's to assign each header name
     for x in header_cols:
         header_names.append(x.text)
     #header_names = [x.text for x in header_cols]
@@ -53,7 +53,7 @@ def parse_and_extract(url, year = None):
             #print(i, cols.text, "\n")   
             # header_name = header_names[i]
             # row_dict_data[header_name] = cols.text        
-        print(row_data)
+        #print(row_data)
         table_data.append(row_data)
         #table_data_dicts.append(row_dict_data)
     df = pd.DataFrame(table_data, columns = header_names)
