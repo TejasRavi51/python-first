@@ -10,3 +10,4 @@ Day 7 - just a general print statement.
 Day 8 - test file with functions and formatting strings
 Day 9 - accessing gmail(any SMTP server) and send/read mail 
 Day 10 - writing into and reading from files, creating directories,  downloading images and renaming them
+Day 12 - requests_html is a better way to scrape data than beautifulsoup library
